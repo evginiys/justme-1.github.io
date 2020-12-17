@@ -1,0 +1,22 @@
+header{
+    top: 0 ;
+}
+nav{
+    position: absolute;
+    left: 0;
+    width: content-box;
+}
+#content{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+footer{
+
+    bottom: 0;
+    width: 100%;
+}
+.with-form{
+    height: 400px;
+}

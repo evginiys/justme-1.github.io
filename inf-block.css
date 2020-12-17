@@ -1,0 +1,17 @@
+.inf-block{
+background: #e0e0e0;
+border-radius: 5px;
+}
+.inf-block__h2{
+    font-weight: bold;
+    margin: auto;
+    font-family: Consolas;
+}
+.inf-block--white{
+    background: rgba(155, 160, 167, 0.61);
+}
+.inf-block__h2{
+    font-weight: bold;
+    margin: auto;
+    font-family: Consolas;
+}

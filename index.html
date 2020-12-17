@@ -6,21 +6,26 @@
     <link rel="shortcut icon" href="images/icons8-grey-26.png" type="image/x-icon">
     <meta name="description" content="Сайт портфолио интерна Луценко">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <link type="text/css" rel="stylesheet" href="nav.css">
+    <link type="text/css" rel="stylesheet" href="inf-block.css">
+    <link type="text/css" rel="stylesheet" href="form.css">
 </head>
 <body>
 <header>
     <h1>Сайт портфолио Луценко</h1>
-    <img alt="icon" src="images/icons8-grey-26.png">
-    <menu>
-        <li><a href="#aboutMe">Обо мне</a></li>
-        <li><a href="#works">Мои работы</a></li>
-        <li><a href="#form">Форма связи</a></li>
-        <li><a href="#contacts">Контакты</a></li>
+    <menu class="nav nav--menu">
+        <img alt="icon" src="images/icons8-grey-26.png">
+        <li><a href="#aboutMe" class="nav__links">Обо мне</a></li>
+        <li><a href="#works" class="nav__links">Мои работы</a></li>
+        <li><a href="#form" class="nav__links">Форма связи</a></li>
+        <li><a href="#contacts" class="nav__links">Контакты</a></li>
     </menu>
 </header>
 <hr/>
-<main id="aboutMe">
-    <h2>Немного о себе</h2>
+<div id="content">
+<main id="aboutMe" class="inf-block">
+    <h2 class="inf-block__h2">Немного о себе</h2>
     <div>
         <p>
             Доброго времени суток, меня зовут Евгений. Занимаюсь разработкой сайтов. Создаю сайты, которые отлично
@@ -30,17 +35,17 @@
         </p>
     </div>
 </main>
-<div id="works">
+<div id="works" class="inf-block--white">
     <h2>Моё портфолио</h2>
     <p><u> Сдесь динамическая смена контента</u></p>
     <nav>
-        <ul>
-            <li>php</li>
-            <li>python</li>
-            <li>wordpress</li>
+        <ul class="nav">
+            <li><a href="#aboutMe" class="nav__links"> php</a></li>
+            <li><a href="#aboutMe" class="nav__links">python </a></li>
+            <li><a href="#aboutMe" class="nav__links">wordpress </a></li>
         </ul>
     </nav>
-    <div id="myWorks">
+    <div id="myWorks" class="">
         <p><u> Здесь мои работы</u></p>
         <a href="#"><img alt="icon" src="images/icons8-grey-26.png"></a>
         <a href="#"><img alt="icon" src="images/icons8-grey-26.png"></a>
@@ -49,38 +54,33 @@
 </div>
 
 <div id="form">
-    <p>Пишите, всегда рад помочь!</p>
-    <div class="1">
-            <form method="post" >
-                <div >
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                </div>
-                <div >
-                    <label for="message">Сообщение</label>
-                    <textarea name="message" id="message" rows="5"></textarea>
-                </div>
-                <ul class="actions">
-                    <li>
-                        <button type="submit">Отправить</button>
-                    </li>
-                </ul>
+    <div class="with-form">
+            <form method="post" class="form">
+                <p>Пишите, всегда рад помочь!</p>
+                    <input class="form__input" type="text" name="name" id="name">
+
+
+                    <input class="form__input" type="text" name="email" id="email">
+
+
+                    <textarea placeholder="message" name="message" id="message" class="form__textarea" rows="5"></textarea>
+
+
+                <button type="submit" class="form__submit">Отправить</button>
+
             </form>
 
     </div>
 </div>
+</div>
 <hr/>
 <footer>
     <h3 id="contacts">My contacts</h3>
-    <ul>
-        <li><p>phone</p><a href="tel:+79787361924">+79787361924</a></li>
-        <li><p>email</p><a href="#">lsgsger@gmail.com</a></li>
-        <li><p>vk</p><a href="#">myVk</a></li>
-        <li><p>git</p><a href="#">git</a></li>
+    <ul class="nav nav--contacts">
+        <li><span>phone</span><a href="tel:+79787361924" class="nav__links--contacts">+79787361924</a></li>
+        <li><span>email</span><a href="#" class="nav__links--contacts">lsgsger@gmail.com</a></li>
+        <li><span>vk</span><a href="#" class="nav__links--contacts">myVk</a></li>
+        <li><span>git</span><a href="#" class="nav__links--contacts">git</a></li>
         <li></li>
     </ul>
 </footer>
